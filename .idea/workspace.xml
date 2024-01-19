@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f324e52-6dae-4bd9-b844-27f86f4f11ed" name="Changes" comment="week 2 day 4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/BancaDati.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/BaseLibreria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/Genere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/Libri.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/Periodicita.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/Riviste.java" afterDir="false" />
+    <list default="true" id="2f324e52-6dae-4bd9-b844-27f86f4f11ed" name="Changes" comment="week 2 day 5, stabile">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/UsaBancaDati.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +30,9 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/Libri.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/Riviste.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/org/example/week2/day4/Customer.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -99,13 +97,22 @@
       <option name="project" value="LOCAL" />
       <updated>1705591012224</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="week 2 day 5, stabile">
+      <option name="closed" value="true" />
+      <created>1705678740766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705678740766</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="week 2 day 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="week 2 day 4" />
+    <MESSAGE value="week 2 day 5, stabile" />
+    <option name="LAST_COMMIT_MESSAGE" value="week 2 day 5, stabile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -131,6 +131,13 @@ public class BancaDati {
                                 "@" + libro.getNumPagine() +
                                 "@" + libro.getAutore() +
                                 "@" + libro.getGenere().stream().map(Enum::name).collect(Collectors.joining(","));
+                    } else if (p instanceof Riviste) {
+                        Riviste rivista = (Riviste) p;
+                        return rivista.getTitolo() +
+                                "@" + rivista.getCodISBN() +
+                                "@" + rivista.getAnnoPublicazione() +
+                                "@" + rivista.getNumPagine() +
+                                "@" + rivista.getPeriodicita().name();
                     } else {
                         return p.getTitolo() +
                                 "@" + p.getCodISBN() +
