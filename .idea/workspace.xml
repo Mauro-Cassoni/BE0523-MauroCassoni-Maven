@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f324e52-6dae-4bd9-b844-27f86f4f11ed" name="Changes" comment="prova post git reset" />
+    <list default="true" id="2f324e52-6dae-4bd9-b844-27f86f4f11ed" name="Changes" comment="prova post git reset">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,14 +26,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/m1/week2/day4/Customer.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/BancaDati.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/BaseLibreria.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/Libri.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/org/example/m1/week2/day5/Riviste.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/week2/day4/Customer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Evento.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -42,20 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BancaDati.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Shop.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mauro/IdeaProjects/primo_progetto_Maven/src/main/java/org/example/week2/day4&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mauro/IdeaProjects/primo_progetto_Maven/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BancaDati.executor": "Run",
+    "Application.Shop.executor": "Run",
+    "Application.UsaEvento.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mauro/IdeaProjects/BE0523-MauroCassoni-Maven/src/main/resources/META-INF",
+    "onboarding.tips.debug.path": "C:/Users/mauro/IdeaProjects/primo_progetto_Maven/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mauro\IdeaProjects\BE0523-MauroCassoni-Maven\src\main\resources\META-INF" />
       <recent name="C:\Users\mauro\IdeaProjects\primo_progetto_Maven\src\main\java\org\example\week2\day4" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -118,14 +125,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705678740766</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="prova post git reset">
+      <option name="closed" value="true" />
+      <created>1706007402311</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706007402311</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="week 2 day 4" />
     <MESSAGE value="week 2 day 5, stabile" />
-    <option name="LAST_COMMIT_MESSAGE" value="week 2 day 5, stabile" />
+    <MESSAGE value="prova post git reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="prova post git reset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
