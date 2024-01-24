@@ -23,15 +23,20 @@ public class Evento {
     @Column(name = "numero_massimo_partecipanti")
     private int numeroMassimoPartecipanti;
 
+    @OneToOne
+    @JoinColumn
+    private Location location;
+
     public Evento() {
     }
 
-    public Evento(String titolo, LocalDate dataEvento, String descrizione, TipoEvento tipoEvento, int numeroMassimoPartecipanti) {
+    public Evento(String titolo, LocalDate dataEvento, String descrizione, TipoEvento tipoEvento, int numeroMassimoPartecipanti, Location location) {
         this.titolo = titolo;
         this.dataEvento = dataEvento;
         this.descrizione = descrizione;
         this.tipoEvento = tipoEvento;
         this.numeroMassimoPartecipanti = numeroMassimoPartecipanti;
+        this.location = location;
     }
 
     @Override
@@ -43,6 +48,7 @@ public class Evento {
                 ", descrizione='" + descrizione + '\'' +
                 ", tipoEvento=" + tipoEvento +
                 ", numeroMassimoPartecipanti=" + numeroMassimoPartecipanti +
+                ", location=" + location +
                 '}';
     }
 
@@ -64,6 +70,14 @@ public class Evento {
 
     public void setNumeroMassimoPartecipanti(int numeroMassimoPartecipanti) {
         this.numeroMassimoPartecipanti = numeroMassimoPartecipanti;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
     }
 
     public int getId() {

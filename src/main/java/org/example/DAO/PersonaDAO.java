@@ -1,38 +1,38 @@
 package org.example.DAO;
 
 import org.example.m1.week3.day2.Evento;
+import org.example.m1.week3.day2.Persona;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-public class EventoDAO {
+public class PersonaDAO {
 
     private EntityManagerFactory emf;
     private EntityManager em;
 
-    public EventoDAO() {
-
+    public PersonaDAO() {
         emf = Persistence.createEntityManagerFactory("gestioneeventi");
         em = emf.createEntityManager();
     }
 
-    public void save(Evento e){
+    public void save(Persona p){
         EntityTransaction et = em.getTransaction();
 
         et.begin();
 
-        em.persist(e);
+        em.persist(p);
 
         et.commit();
 
-        em.refresh(e);
+        em.refresh(p);
     }
 
-    public Evento getById(int id){
+    public Persona getById(int id){
 
-        return em.find(Evento.class, id);
+        return em.find(Persona.class, id);
 
     }
 
@@ -46,19 +46,4 @@ public class EventoDAO {
         et.commit();
 
     }
-
-
-    public void update(Evento e) {
-        EntityTransaction et = em.getTransaction();
-
-        et.begin();
-
-        em.merge(e);
-
-        et.commit();
-    }
-
-
-
-
 }
