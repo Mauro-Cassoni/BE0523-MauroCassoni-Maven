@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f324e52-6dae-4bd9-b844-27f86f4f11ed" name="Changes" comment="week 3 day 2 prova">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DAO/LocationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DAO/PartecipazioneDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DAO/PersonaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Partecipazione.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Sesso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Stato.java" afterDir="false" />
+    <list default="true" id="2f324e52-6dae-4bd9-b844-27f86f4f11ed" name="Changes" comment="week 3 day 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DAO/EventoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DAO/EventoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Partecipazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Partecipazione.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/Persona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/UsaEvento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/m1/week3/day2/UsaEvento.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706018703790</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="week 3 day 3">
+      <option name="closed" value="true" />
+      <created>1706111591019</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706111591019</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -170,7 +172,8 @@
     <MESSAGE value="prova post git reset" />
     <MESSAGE value="week 3 day 2" />
     <MESSAGE value="week 3 day 2 prova" />
-    <option name="LAST_COMMIT_MESSAGE" value="week 3 day 2 prova" />
+    <MESSAGE value="week 3 day 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="week 3 day 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

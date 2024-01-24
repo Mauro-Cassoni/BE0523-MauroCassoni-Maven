@@ -11,7 +11,7 @@ public class Partecipazione {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn
     private Persona persona;
 

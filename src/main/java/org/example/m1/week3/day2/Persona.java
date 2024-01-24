@@ -19,9 +19,9 @@ public class Persona {
     private LocalDate data_di_nascita;
     @Enumerated(EnumType.STRING)
     private Sesso sesso;
-    @OneToOne
-    @JoinColumn
-    private Partecipazione lista_partecipazioni;
+    @OneToMany(mappedBy = "persona")
+    //@OrderBy("")
+    private List<Partecipazione> lista_partecipazioni;
 
     public Persona(String nome, String cognome, String email, LocalDate data_di_nascita, Sesso sesso) {
         this.nome = nome;
@@ -29,6 +29,14 @@ public class Persona {
         this.email = email;
         this.data_di_nascita = data_di_nascita;
         this.sesso = sesso;
+    }
+
+    public List<Partecipazione> getLista_partecipazioni() {
+        return lista_partecipazioni;
+    }
+
+    public void setLista_partecipazioni(List<Partecipazione> lista_partecipazioni) {
+        this.lista_partecipazioni = lista_partecipazioni;
     }
 
     public Persona() {
@@ -58,10 +66,6 @@ public class Persona {
         return sesso;
     }
 
-    public Partecipazione getLista_partecipazioni() {
-        return lista_partecipazioni;
-    }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -86,9 +90,6 @@ public class Persona {
         this.sesso = sesso;
     }
 
-    public void setLista_partecipazioni(Partecipazione lista_partecipazioni) {
-        this.lista_partecipazioni = lista_partecipazioni;
-    }
 
     @Override
     public String toString() {
@@ -99,7 +100,6 @@ public class Persona {
                 ", email='" + email + '\'' +
                 ", data_di_nascita=" + data_di_nascita +
                 ", sesso=" + sesso +
-                ", lista_partecipazioni=" + lista_partecipazioni +
                 '}';
     }
 }

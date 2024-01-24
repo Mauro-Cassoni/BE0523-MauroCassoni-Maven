@@ -18,16 +18,49 @@ public class UsaEvento {
         PartecipazioneDAO partecipazioneDao = new PartecipazioneDAO();
         PersonaDAO personaDao = new PersonaDAO();
 
-        Location location = new Location("Parco","Roma");
-        Persona persona = new Persona("Mario","Rossi","mario@rossi.it",LocalDate.of(1994,10,01),Sesso.M);
-        Evento evento = new Evento("Evento 1",LocalDate.of(2024,01,10),"Descrizione evento 1",TipoEvento.RIUNIONE,25,location);
-        Partecipazione partecipazione = new Partecipazione(persona,evento,Stato.CONFERMATA);
+        Persona persona1 = new Persona();
+        persona1.setNome("Mario");
+        persona1.setCognome("Rossi");
 
-        locationDao.save(location);
-        personaDao.save(persona);
-        eventoDao.save(evento);
-        partecipazioneDao.save(partecipazione);
+        Persona persona2 = new Persona();
+        persona2.setNome("Luigi");
+        persona2.setCognome("Verdi");
 
+            personaDao.save(persona1);
+            personaDao.save(persona2);
+
+        Location location1 = new Location();
+        location1.setCitta("Milano");
+
+            locationDao.save(location1);
+
+
+        Evento evento1 = new Evento();
+        evento1.setDescrizione("descrizione");
+        evento1.setLocation(location1);
+
+        Evento evento2 = new Evento();
+        evento2.setDescrizione("descrizione 2");
+        evento2.setLocation(location1);
+
+            eventoDao.save(evento1);
+            eventoDao.save(evento2);
+
+        Partecipazione partecipazione1 = new Partecipazione();
+        partecipazione1.setPersona(persona1);
+        partecipazione1.setEvento(evento1);
+
+        Partecipazione partecipazione2 = new Partecipazione();
+        partecipazione2.setPersona(persona1);
+        partecipazione2.setEvento(evento2);
+
+        Partecipazione partecipazione3 = new Partecipazione();
+        partecipazione3.setPersona(persona2);
+        partecipazione3.setEvento(evento2);
+
+        partecipazioneDao.save(partecipazione1);
+        partecipazioneDao.save(partecipazione2);
+        partecipazioneDao.save(partecipazione3);
 
 
     }
