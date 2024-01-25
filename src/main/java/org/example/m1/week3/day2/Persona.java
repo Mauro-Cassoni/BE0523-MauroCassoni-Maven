@@ -1,8 +1,10 @@
 package org.example.m1.week3.day2;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 import java.util.List;
+
 
 @Entity
 @Table(name = "persona")
@@ -20,8 +22,9 @@ public class Persona {
     @Enumerated(EnumType.STRING)
     private Sesso sesso;
     @OneToMany(mappedBy = "persona")
-    //@OrderBy("")
+    @OrderBy("evento asc")
     private List<Partecipazione> lista_partecipazioni;
+
 
     public Persona(String nome, String cognome, String email, LocalDate data_di_nascita, Sesso sesso) {
         this.nome = nome;

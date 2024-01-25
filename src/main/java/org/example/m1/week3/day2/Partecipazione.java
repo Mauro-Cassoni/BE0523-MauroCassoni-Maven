@@ -1,6 +1,7 @@
 package org.example.m1.week3.day2;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 
 @Entity
 @Table(name = "partecipazione")
@@ -12,11 +13,11 @@ public class Partecipazione {
     private int id;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name = "persona_id")
     private Persona persona;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name = "evento_id")
     private Evento evento;
 
     @Enumerated(EnumType.STRING)

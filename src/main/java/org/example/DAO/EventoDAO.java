@@ -1,11 +1,23 @@
 package org.example.DAO;
 
 import org.example.m1.week3.day2.Evento;
+import jakarta.persistence.*;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import org.example.m1.week3.day4.Concerto;
+import org.example.m1.week3.day4.PartitaDiCalcio;
+import org.hibernate.annotations.NamedQuery;
+
+import javax.management.Query;
+import java.util.List;
+
+
+@NamedQuery(name = "getConcertiInStreaming", query = "select c from Concerto c where c.in_streaming = :in_streaming")
+@NamedQuery(name = "getConcertiPerGenere", query = "select c from Concerto c where c.genere = :genere")
+
+@NamedQuery(name = "getPartiteVinteInCasa", query = "select p from PartitaDiCalcio p where p.squadraVincente = :squadraVincente")
+@NamedQuery(name = "getPartiteVinteInTrasferta", query = "select p from PartitaDiCalcio p where p.squadraVincente = :squadraVincente")
+
+
 
 public class EventoDAO {
 
@@ -14,7 +26,7 @@ public class EventoDAO {
 
     public EventoDAO() {
 
-        emf = Persistence.createEntityManagerFactory("gestioneeventi");
+        emf = Persistence.createEntityManagerFactory("eventi");
         em = emf.createEntityManager();
     }
 
@@ -57,6 +69,31 @@ public class EventoDAO {
 
         et.commit();
     }
+
+    public List<Concerto> getConcertiInStreaming(boolean inStreaming) {
+        TypedQuery<Concerto> query = em.createNamedQuery("getConcertiInStreaming", Concerto.class);
+        query.setParameter("in_streaming", inStreaming);
+        return query.getResultList();
+    }
+
+    public List<Concerto> getConcertiPerGenere(String genere) {
+        TypedQuery<Concerto> query = em.createNamedQuery("getConcertiPerGenere", Concerto.class);
+        query.setParameter("genere",genere);
+        return query.getResultList();
+    }
+
+    public List<PartitaDiCalcio> getPartiteVinteInCasa() {
+        TypedQuery<PartitaDiCalcio> query = em.createNamedQuery("getPartiteVinteInCasa", PartitaDiCalcio.class);
+        query.setParameter("squadraVincente","squadra_di_casa");
+        return query.getResultList();
+    }
+
+    public List<PartitaDiCalcio> getPartiteVinteInTrasferta() {
+        TypedQuery<PartitaDiCalcio> query = em.createNamedQuery("getPartiteVinteInTrasferta", PartitaDiCalcio.class);
+        query.setParameter("squadraVincente","squadra_ospite");
+        return query.getResultList();
+    }
+
 
 
 

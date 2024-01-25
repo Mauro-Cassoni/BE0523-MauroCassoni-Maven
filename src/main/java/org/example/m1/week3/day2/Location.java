@@ -1,6 +1,7 @@
 package org.example.m1.week3.day2;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 import java.util.List;
 
 @Entity

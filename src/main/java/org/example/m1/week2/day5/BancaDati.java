@@ -1,7 +1,5 @@
 package org.example.m1.week2.day5;
 
-import org.apache.commons.io.FileUtils;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -147,7 +145,7 @@ public class BancaDati {
                 })
                 .collect(Collectors.joining("#"));
 
-        FileUtils.writeStringToFile(out, stringaCatalogo, Charset.defaultCharset());
+        //FileUtils.writeStringToFile(out, stringaCatalogo, Charset.defaultCharset());
     }
 
 

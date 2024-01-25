@@ -3,10 +3,8 @@ package org.example.DAO;
 import org.example.m1.week3.day2.Evento;
 import org.example.m1.week3.day2.Persona;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import jakarta.persistence.*;
+
 
 public class PersonaDAO {
 
